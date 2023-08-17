@@ -11,8 +11,8 @@
   - name: start docker service
     command: sudo systemctl start docker
 
- - name: To remove existing insure-me container
-    command: sudo docker rm -f my-insure 
+ - name: To remove existing insure-me1 container
+    command: sudo docker rm -f my-insure
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8081:8081 --name my-insure jyothsna2047/insure-me:1.0
+    command: docker run -itd -p 8081:8081 --name my-insure jyothsna2047/insure-me1:1.0
